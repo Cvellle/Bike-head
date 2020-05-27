@@ -1,0 +1,43 @@
+@import "./base/base.scss";
+@import "./base/mixins.scss";
+@import "./modules/header.scss";
+@import "./modules/introduction.scss";
+@import "./modules/categories.scss";
+@import "./modules/footer.scss";
+
+* {
+  box-sizing: border-box;
+  font-family: Open, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  border: 0;
+  outline: 0;
+
+  &:active {
+    border: 0;
+    outline: 0;
+  }
+
+  &:focus {
+    border: 0;
+    outline: 0;
+  }
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+
+// @import "footer.scss";

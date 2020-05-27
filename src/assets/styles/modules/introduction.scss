@@ -1,0 +1,47 @@
+$imgPath: "../" !default;
+
+.introduction {
+  display: grid;
+  grid: auto / 100%;
+  grid-gap: 4vw 0px;
+  padding: 5vw 3vw 5vw;
+  place-items: space-around;
+  font-size: 4.5vw;
+
+  @include desktop {
+    grid: 100% / 50% 50%;
+    font-size: 1.5vw;
+    grid-gap: 0vw 0vw;
+  }
+
+  > div:nth-child(1) {
+    display: grid;
+    grid: repeat(3, auto) / 100%;
+    align-content: space-between;
+    min-height: 100%;
+    grid-gap: 3vw 0vw;
+
+    @include desktop {
+      padding-right: 5vw;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    grid-area: 2 / 1 / 6/ 1;
+    background-image: url($imgPath + "images/bgr2.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    min-height: 54vw;
+
+    @include desktop {
+      grid-area: 1 / 2 / 2 / 3;
+      font-size: 1.5vw;
+      min-height: 24vw;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}

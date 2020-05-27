@@ -1,0 +1,61 @@
+$imgPath: "../" !default;
+
+.categories {
+  padding: 15vw 3vw 5vw;
+  display: grid;
+  justify-content: center;
+  grid-template: repeat(7, auto) / 100%;
+  grid-gap: 4vw 0px;
+
+  @include desktop {
+    padding: 5vw 3vw 5vw;
+    justify-content: space-between;
+    grid-template: repeat(2, auto) / repeat(3, auto);
+    grid-gap: 4vw 0px;
+  }
+
+  & > h2 {
+    display: grid;
+    justify-content: center;
+
+    @include desktop {
+      grid-area: 1 / 1 / 2 / 4;
+    }
+  }
+
+  & > div {
+    width: 100%;
+    height: 60vw;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+    @include desktop {
+      width: 25vw;
+      height: 15vw;
+    }
+  }
+
+  &__item1 {
+    background-image: url($imgPath + "images/bgr2.jpg");
+  }
+
+  &__item2 {
+    background-image: url($imgPath + "images/bgr2.jpg");
+  }
+
+  &__item3 {
+    background-image: url($imgPath + "images/bgr2.jpg");
+  }
+
+  &__item4 {
+    background-image: url($imgPath + "images/bgr2.jpg");
+  }
+
+  &__item5 {
+    background-image: url($imgPath + "images/bgr2.jpg");
+  }
+
+  &__item6 {
+    background-image: url($imgPath + "images/bgr2.jpg");
+  }
+}

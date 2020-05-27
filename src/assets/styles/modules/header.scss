@@ -1,0 +1,48 @@
+$imgPath: "../" !default;
+
+header {
+  display: grid;
+  grid-template: 20vw / 35% 45% 20%;
+  padding: 0 3vw;
+  align-items: flex-end;
+  background: rgb(56, 56, 90);
+  color: white;
+
+  @include desktop {
+    grid-template: 7vw / 35% 45% 20%;
+    padding: 0 3vw;
+    align-items: flex-end;
+  }
+
+  & .logo {
+    align-self: center;
+    height: 4vw;
+    width: 6vw;
+    background-image: url($imgPath + "images/bgr2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  & nav a {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    margin-right: 2vw;
+    padding-bottom: 1vw;
+    font-size: 2vw;
+
+    @include desktop {
+      font-size: 1.4vw;
+    }
+  }
+
+  & .search {
+    display: grid;
+    justify-content: flex-end;
+    align-self: center;
+
+    & i {
+      cursor: pointer;
+    }
+  }
+}
