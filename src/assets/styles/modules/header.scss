@@ -17,9 +17,9 @@ header {
   & .logo {
     align-self: center;
     height: 4vw;
-    width: 6vw;
-    background-image: url($imgPath + "images/bgr2.jpg");
-    background-size: cover;
+    width: 7vw;
+    background-image: url($imgPath + "images/logo.png");
+    background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
   }
