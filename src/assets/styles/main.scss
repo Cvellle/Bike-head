@@ -6,6 +6,10 @@
 @import "./modules/tricks.scss";
 @import "./modules/footer.scss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   font-family: Open, sans-serif;
