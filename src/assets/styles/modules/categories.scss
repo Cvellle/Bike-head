@@ -6,6 +6,7 @@ $imgPath: "../" !default;
   justify-content: center;
   grid-template: repeat(7, auto) / 100%;
   grid-gap: 4vw 0px;
+  background-color: rgba(243, 241, 241, 0.397);
 
   @include desktop {
     padding: 5vw 3vw 5vw;

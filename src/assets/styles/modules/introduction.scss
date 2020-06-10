@@ -7,10 +7,11 @@ $imgPath: "../" !default;
   padding: 5vw 3vw 5vw;
   place-items: space-around;
   font-size: 4.5vw;
+  background-color: rgba(243, 241, 241, 0.363);
 
   @include desktop {
     grid: 100% / 50% 50%;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     grid-gap: 0vw 0vw;
   }
 
